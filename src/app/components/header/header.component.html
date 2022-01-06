@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent" role="navigation">
+  <div class="container-fluid d-inline">
+
+    <!-- Mobile dropdown icon -->
+    <div class="d-flex align-items-center">
+
+      <!-- Toggler "hamburguer" -->
+      <button class="navbar-toggler mt-1 mb-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo -->
+      <a class="appear-mobile-layout navbar-brand me-0 ms-auto" href="#"><img height="75px" src="../../../assets/images/GatinokoTransparentG.png"></a>
+    </div>
+
+    <!-- Text or logo on the navbar's center -->
+    <div class="navbar-brand collapse navbar-collapse justify-content-md-center me-0">
+      <a routerLink="home"><img height="125px" src="../../../assets/images/GatinokoTransparentG.png"></a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 align-items-start">
+        <!-- Home navbar item -->
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="home" routerLinkActive="active">Home</a>
+          <a *ngIf="current == false" class="nav-link" routerLink="home">Home</a>
+        </li>
+
+        <!-- Link navbar item -->
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="about-me" routerLinkActive="active">About me</a>
+        </li>
+
+        <!-- Link navbar item -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="projects" routerLinkActive="active">Projects</a>
+        </li>
+
+        <!-- Link navbar item -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

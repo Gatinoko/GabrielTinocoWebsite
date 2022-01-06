@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+/* HTML Elements */
+body {
+  margin: 0 0 0 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+html {
+  background: url(./assets/images/1314309.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+}
+
+
+/* CSS classes */
+hr.lead-horizontal-divisor {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+  margin-bottom: 32px;
+  height: 2px;
+}
+
+.color-changing-text {
+  background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);
+  /* background-image: url(./assets/images/AnchoredShoddyHarborseal-size_restricted.gif); */
+  background-clip: text;
+  background-size: 1000%;
+  animation: fade-animation 30s linear infinite running;
+}
+
+
+/* @media queries */
+/*
+Since I couldn't use a pre-made Bootstrap class that would let me make objects
+appear on the screen once the mobile resolution was being used, I made this class.
+*/
+@media (min-width: 992px) {
+  .appear-mobile-layout {
+    display: none;
+  }
+}
+
+
+/* @keyframes animations */
+@keyframes fade-animation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  110% {
+    background-position: 0% 100%;
+  }
+}
