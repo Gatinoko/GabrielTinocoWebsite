@@ -12,11 +12,6 @@ html {
   background-size: cover;
 }
 
-main {
-  position: relative;
-}
-
-
 /* CSS classes */
 hr.lead-horizontal-divisor {
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
@@ -26,12 +21,18 @@ hr.lead-horizontal-divisor {
 
 .color-changing-text {
   background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);
-  /* background-image: url(./assets/images/AnchoredShoddyHarborseal-size_restricted.gif); */
   background-clip: text;
   background-size: 1000%;
   animation: fade-animation 30s linear infinite running;
 }
 
+div.black-container {
+  border-style: solid;
+  border-color: rgb(20, 20, 20, 0.25);
+  border-width: 2px;
+  background-color: rgb(5, 5, 5, 0.5);
+  border-radius: 5px;
+}
 
 /* @media queries */
 /*
