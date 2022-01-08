@@ -1,7 +1,7 @@
 /* HTML Elements */
 body {
   margin: 0 0 0 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(172, 172, 172, 0);
 }
 
 html {
@@ -15,8 +15,26 @@ html {
 /* CSS classes */
 hr.lead-horizontal-divisor {
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   height: 2px;
+}
+
+hr.standard-horizontal-divisor {
+  overflow: visible;
+  height: 2px;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+  text-align: center;
+}
+
+hr.standard-horizontal-divisor::after {
+  content: attr(data-content);
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  padding: 0 0.25em;
+  background: rgb(0, 0, 0);
+  background-clip: border-box;
 }
 
 .color-changing-text {
