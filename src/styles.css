@@ -1,6 +1,6 @@
 /* HTML Elements */
 body {
-  margin: 0 0 0 0;
+  margin: 0 0 150px 0;
   background-color: rgba(172, 172, 172, 0);
 }
 
@@ -37,19 +37,50 @@ hr.standard-horizontal-divisor::after {
   background-clip: border-box;
 }
 
-.color-changing-text {
-  background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);
-  background-clip: text;
-  background-size: 1000%;
-  animation: fade-animation 30s linear infinite running;
-}
-
 div.black-container {
   border-style: solid;
   border-color: rgb(20, 20, 20, 0.25);
   border-width: 2px;
   background-color: rgb(5, 5, 5, 0.5);
   border-radius: 5px;
+}
+
+.color-changing-text {
+  background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);
+  background-clip: text;
+  background-size: 1000%;
+  animation: text-fade-animation 30s linear infinite running;
+}
+
+.mh-250px {
+  max-height: 250px;
+}
+
+.w-carousel-sizing {
+  width: 25%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  animation: fade-animation 1s;
 }
 
 /* @media queries */
@@ -63,9 +94,15 @@ appear on the screen once the mobile resolution was being used, I made this clas
   }
 }
 
+@media (max-width: 991px) {
+  .w-carousel-sizing {
+    width: 75%;
+  }
+}
+
 
 /* @keyframes animations */
-@keyframes fade-animation {
+@keyframes text-fade-animation {
   0% {
     background-position: 0% 100%;
   }
