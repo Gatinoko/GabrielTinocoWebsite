@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { AboutMePageComponent } from 'src/app/components/about-me-page/about-me-page.component';
 import { HomePageComponent } from 'src/app/components/home-page/home-page.component';
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component';
+import { ContactPageComponent } from './components/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMePageComponent,
     HomePageComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
