@@ -46,10 +46,11 @@ div.black-container {
 }
 
 .color-changing-text {
-  background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);
+  /*background-image: linear-gradient(90deg, rgba(255,50,50,1) 0%, rgba(177,87,237,1) 33%, rgba(255,65,113,1) 66%, rgba(85,97,255,1) 100%);*/
+  background-image: url('./assets/images/giphy.gif');
+  background-size: 5%;
+  animation: text-fade-animation 120s linear infinite running;
   background-clip: text;
-  background-size: 1000%;
-  animation: text-fade-animation 30s linear infinite running;
 }
 
 .mh-250px {
