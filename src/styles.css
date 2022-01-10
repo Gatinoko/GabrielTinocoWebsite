@@ -56,7 +56,7 @@ div.black-container {
   max-height: 250px;
 }
 
-.w-carousel-sizing {
+.correct-image-sizing {
   width: 25%;
 }
 
@@ -95,7 +95,7 @@ appear on the screen once the mobile resolution was being used, I made this clas
 }
 
 @media (max-width: 991px) {
-  .w-carousel-sizing {
+  .correct-image-sizing {
     width: 75%;
   }
 }
