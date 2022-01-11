@@ -12,7 +12,7 @@ import { fader } from './route-animations';
   ]
 })
 export class AppComponent {
-  title = 'GabrielTinocoWebsite';
+  title = 'Gabriel Tinoco Website';
 
   // For some reason using the outlet template variable directly doesn't work, but this works so whatever
   prepareRoute(outlet: RouterOutlet) {
