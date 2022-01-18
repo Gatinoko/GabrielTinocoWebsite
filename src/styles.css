@@ -1,7 +1,7 @@
 /* HTML Elements */
 body {
   margin: 0 0 150px 0;
-  background-color: rgba(172, 172, 172, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -25,6 +25,7 @@ hr.standard-horizontal-divisor {
   padding: 0;
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
   text-align: center;
+  opacity: 0.5;
 }
 
 hr.standard-horizontal-divisor::after {
